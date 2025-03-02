@@ -104,6 +104,7 @@ function Node(value = null, nextNode = null) {
       result += "null";
       return result;
     };
+
   
     return {
       append,
@@ -119,18 +120,20 @@ function Node(value = null, nextNode = null) {
     };
   }
   
-  // Example usage
+
   const myList = LinkedList();
-  myList.append(1);
-  myList.append(2);
-  myList.append(3);
-  myList.prepend(0);
+  myList.append("dog");
+  myList.append("cat");
+  myList.append("parrot");
+  myList.append("hamster");
+  myList.append("snake");
+  myList.append("turtle");
   
   console.log(myList.toString()); 
   console.log("Size:", myList.size());
   console.log("Head:", myList.head()); 
-console.log("Tail:", myList.tail()); 
-  console.log("At index 2:", myList.at(2)); 
+  console.log("Tail:", myList.tail()); 
+  console.log("At index 2:", myList.at(1)); 
   console.log("Contains 2:", myList.contains(2)); 
   console.log("Find 2:", myList.find(2)); 
   myList.pop();
